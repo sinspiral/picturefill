@@ -948,7 +948,7 @@
 	 * @returns {boolean}
 	 */
 	pf.matchesMedia = function() {
-		if ( window.matchMedia && (matchMedia( "" ) || {}).matches ) {
+		if ( window.matchMedia && (matchMedia( "all" ) || {}).matches ) {
 			pf.matchesMedia = function( media ) {
 				return !media || ( matchMedia( media ).matches );
 			};
