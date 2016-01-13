@@ -948,7 +948,7 @@
 	 * @returns {boolean}
 	 */
 	pf.matchesMedia = function() {
-		if ( window.matchMedia && (matchMedia( "(min-width: 0.1em)" ) || {}).matches ) {
+		if ( window.matchMedia && (matchMedia( "" ) || {}).matches ) {
 			pf.matchesMedia = function( media ) {
 				return !media || ( matchMedia( media ).matches );
 			};

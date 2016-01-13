@@ -1,6 +1,6 @@
-/*! Picturefill - v3.0.1 - 2015-09-30
+/*! Picturefill - v3.0.1 - 2016-01-13
  * http://scottjehl.github.io/picturefill
- * Copyright (c) 2015 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
+ * Copyright (c) 2016 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
  */
 /*! Gecko-Picture - v1.0
  * https://github.com/scottjehl/picturefill/tree/3.0/src/plugins/gecko-picture
@@ -1021,7 +1021,7 @@
 	 * @returns {boolean}
 	 */
 	pf.matchesMedia = function() {
-		if ( window.matchMedia && (matchMedia( "(min-width: 0.1em)" ) || {}).matches ) {
+		if ( window.matchMedia && (matchMedia( "" ) || {}).matches ) {
 			pf.matchesMedia = function( media ) {
 				return !media || ( matchMedia( media ).matches );
 			};
