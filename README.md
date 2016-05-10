@@ -9,7 +9,7 @@ Picturefill has three versions:
 
 * Version 1 mimics the Picture element pattern with `span` elements. It is no longer maintained.
 * Version 2 is a lightweight polyfill of the [Picture element draft specification](http://www.whatwg.org/specs/web-apps/current-work/multipage/embedded-content.html#embedded-content).
-* Version 3.0.1 is the current stable release.
+* Version 3.0.2 is the current stable release.
 
 ## Usage, Demos, Docs
 To find out how to use Picturefill, visit the [project site](http://scottjehl.github.com/picturefill/).
@@ -35,7 +35,7 @@ Be it browser issues, the responsive images specifications, or Picturefill itsel
 ```html
 <picture>
     <source srcset="../img/sample.svg" media="(min-width: 768px)" />
-    <img srcset="data:image/gifbase64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    <img srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
         alt="Sample pic" />
 </picture>
 ```
